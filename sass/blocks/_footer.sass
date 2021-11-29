@@ -36,7 +36,8 @@
     display: flex
     align-items: center
     justify-content: space-between
-    flex-wrap: wrap        
+    flex-wrap: wrap     
+    margin-bottom: 94px   
   &__ul
     padding: 0
     margin: 0
@@ -63,7 +64,7 @@
     &--mb-2
       margin-bottom: 20px
   &__icon
-    &--wrapper 
+    &-wrapper 
       min-width: 40px
   &__text
     color: $footer-text-color
@@ -87,7 +88,8 @@
     height: 123px
     border: none
     flex-basis: 100%
-    margin-bottom: 23px
+    margin-bottom: 23px    
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -107,4 +109,26 @@
     line-height: 15px
     color: $footer-info-color
     overflow: hidden
-    
+  
+  &__conditions
+    grid-column: 2 / 6
+    grid-row: 5 / 6
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between      
+    &-links
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 283px
+      height: 15px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light 
+  &__formpay
+    width: 136px
+    height: 22px
+

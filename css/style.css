@@ -1202,6 +1202,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 94px;
 }
 
 .footer__ul {
@@ -1245,7 +1246,7 @@ template {
   margin-bottom: 20px;
 }
 
-.footer__icon--wrapper {
+.footer__icon-wrapper {
   min-width: 40px;
 }
 
@@ -1280,6 +1281,7 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
 }
 
 .footer__button {
@@ -1303,6 +1305,51 @@ template {
   line-height: 15px;
   color: #E0E0E0;
   overflow: hidden;
+}
+
+.footer__conditions {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / 6;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+}
+
+.footer__conditions-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__conditions-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 283px;
+  height: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.footer__formpay {
+  width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
