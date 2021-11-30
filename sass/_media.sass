@@ -14,7 +14,7 @@
     height: 230px   
   .footer
     &__input
-      flex-basis: 100%  
+      flex-basis: 100%
 
 @media (max-width: 992px)
   .container,
@@ -101,6 +101,13 @@
     max-width: 576px
     width: 92%
   .navbar
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
     &__search, &-menu, &__user
       display: none
   .menu
@@ -176,10 +183,12 @@
     width: 49%
     height: 255px  
   .footer
+    &__form
+      margin-bottom: 16px
     &__input
       flex-basis: 100%
     &__conditions  
-      flex-basis: 100%
+      
 
   
 @media (max-width: 576px)
@@ -230,13 +239,51 @@
       &-form
         grid-row: 7
         grid-column: 1   
+    &__message
+      width: 100%   
     &__conditions
       grid-column: 1
       grid-row: 8
+      flex-direction: column
+      align-items: flex-start
+
+@media (max-width: 320px)
+  .footer
+    &__form
+      margin-bottom: 0px
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact  
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1   
+    &__message
+      width: 100%   
+    &__conditions
+      grid-column: 1
+      grid-row: 8
+      flex-direction: column
+      align-items: flex-start
+        
        
                 
-  
-@media (max-width: 320px)
-  .logo
-    font-size: 13px
-    line-height: 13px
+
