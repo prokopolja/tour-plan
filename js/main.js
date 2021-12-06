@@ -67,8 +67,8 @@ $(document).ready(function () {
           minlength: "Имя должно быть не короче 2 букв",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Укажите вашу электронную почту, чтобы мы связались с вами ",
+          email: "Ваша почта должна быть указана в формате name@domain.com",
         },
         phone: {
           required: "Телефон обязателен",
