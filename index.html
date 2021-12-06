@@ -212,7 +212,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="email" method="POST">
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="email" method="POST"/>
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -457,7 +457,7 @@
             <div class="footer__input-group">
               <input 
                 type="tel" 
-                class="input footer__input phone__input" 
+                class="input footer__input phone-number" 
                 placeholder="Phone Number*" 
                 id="phone-number"
                 name="phone" 
@@ -504,10 +504,11 @@
           name="name" 
           required
           minlength="2"
+          maxlength="20"
         />
         <input 
           type="tel" 
-          class="input modal__input phone__input" 
+          class="input modal__input phone-number" 
           placeholder="Phone Number*" 
           id="phone"
           name="phone" 
