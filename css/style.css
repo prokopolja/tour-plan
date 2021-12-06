@@ -1793,7 +1793,6 @@ template {
   .modal__input {
     height: 40px;
     font-size: 70%;
-    margin-bottom: 10px;
   }
   .modal__title {
     font-size: 15px;
@@ -1902,17 +1901,23 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .modal__close {
+    width: 13px;
+    height: 13px;
+    top: 11px;
+    right: 11px;
+  }
   .modal__dialog {
     padding: 10px 25px;
   }
   .modal__input {
     height: 25px;
     font-size: 70%;
-    margin-bottom: 10px;
   }
   .modal__title {
     font-size: 11px;
     line-height: 15px;
+    margin-right: 5px;
   }
   .modal__message {
     min-height: 100%;
@@ -1926,7 +1931,7 @@ template {
     font-size: 10px;
     line-height: 13px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
   .modal__info {
     font-size: 10px;
@@ -2014,13 +2019,18 @@ template {
   .footer__conditions-links {
     margin-bottom: 10px;
   }
+  .modal__close {
+    top: 9px;
+    right: 9px;
+    width: 10px;
+    height: 10px;
+  }
   .modal__dialog {
     padding: 10px 20px;
   }
   .modal__input {
     height: 20px;
     font-size: 60%;
-    margin-bottom: 10px;
     padding: 10px;
   }
   .modal__title {

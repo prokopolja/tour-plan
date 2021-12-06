@@ -47,6 +47,15 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  // Закрыть модальное окно ESC
+  $(document).keydown(function(event) { 
+    if (event.keyCode == 27) { 
+      $('.modal').hide();
+    }
+  });
+
+
+
   // Обработка форм
   $('.form').each(function() {
     $(this).validate({
