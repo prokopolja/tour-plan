@@ -112,11 +112,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
+              <img class="hotel__stars" src="img/Star.svg" alt="star">
+              <img class="hotel__stars" src="img/Star.svg" alt="star">
+              <img class="hotel__stars" src="img/Star.svg" alt="star">
+              <img class="hotel__stars" src="img/Star.svg" alt="star">
+              <img class="hotel__stars" src="img/Star.svg" alt="star">
             </div>
             <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
@@ -445,18 +445,24 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="POST" class="form footer__form">
-            <input 
-              type="text" 
-              class="input footer__input" 
-              placeholder="Your Full Name*"
-              name="name"
-            />
-            <input 
-              type="text" 
-              class="input footer__input" 
-              placeholder="Phone Number*"
-              name="phone"
-            />
+            <div class="footer__input-group">
+              <input 
+                type="text" 
+                class="input footer__input" 
+                placeholder="Your Full Name*" 
+                name="name" 
+                required
+             />
+            </div>
+            <div class="footer__input-group">
+              <input 
+                type="text" 
+                class="input footer__input" 
+                placeholder="Phone Number*" 
+                name="phone" 
+                required 
+             />
+            </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -495,18 +501,23 @@
           class="input modal__input" 
           placeholder="Your Full Name*" 
           name="name" 
+          required
+          minlength="2"
         />
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Phone Number*" 
           name="phone" 
+          required
         />
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Email*" 
-          name="email" />
+          name="email" 
+          required
+        />
         <textarea
           class="message modal__message" 
           placeholder="Message" 
@@ -521,6 +532,7 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

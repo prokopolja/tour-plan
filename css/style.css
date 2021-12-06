@@ -64,6 +64,10 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -535,7 +539,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 17px 0;
   margin: 0;
   list-style: none;
 }
@@ -556,8 +560,13 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
-  padding-bottom: 70px;
+  padding-top: 18px;
+  padding-bottom: 69px;
+}
+
+.hotel__stars {
+  width: 6px;
+  height: 6px;
 }
 
 .hotel-info {
@@ -575,16 +584,16 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -1291,7 +1300,7 @@ template {
 
 .footer__text {
   color: #BDBDBD;
-  margin-bottom: 22px;
+  margin-top: 22px;
 }
 
 .footer__link {
@@ -1300,7 +1309,11 @@ template {
 }
 
 .footer__input {
-  margin-bottom: 15px;
+  width: 100%;
+}
+
+.footer__input-group {
+  margin-top: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
@@ -1309,11 +1322,12 @@ template {
   background: #FFFFFF;
   border-radius: 4px;
   padding: 18px 23px;
-  max-width: 539px;
+  width: 545px;
   min-height: 123px;
   border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 15px;
   margin-bottom: 23px;
   resize: none;
   overflow: hidden;
@@ -1424,13 +1438,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1459,7 +1477,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1534,9 +1552,9 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1765,7 +1783,7 @@ template {
   .footer__form {
     margin-bottom: 16px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1787,9 +1805,10 @@ template {
     overflow: hidden;
   }
   .modal__button {
-    min-width: 100px;
+    min-width: 90px;
     min-height: 20px;
     padding: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1902,12 +1921,11 @@ template {
     padding: 10px;
   }
   .modal__button {
-    width: 100%;
+    min-width: 100%;
     min-height: 20px;
     font-size: 10px;
     line-height: 13px;
     padding: 10px;
-    margin-right: 20px;
     margin-bottom: 10px;
   }
   .modal__info {
@@ -2016,7 +2034,7 @@ template {
     padding: 10px;
   }
   .modal__button {
-    min-width: 100%;
+    width: 100%;
     min-height: 20px;
     font-size: 10px;
     line-height: 13px;
