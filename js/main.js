@@ -23,7 +23,7 @@ $(document).ready(function () {
     // Управление клавиатурой
     keyboard: true,
   });
-
+  //Модальное окно
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $('.navbar-bottom').toggleClass('navbar-bottom--visible');
@@ -47,6 +47,7 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
   // Закрыть модальное окно ESC
   $(document).keydown(function(event) { 
     if (event.keyCode == 27) { 
@@ -77,6 +78,15 @@ $(document).ready(function () {
       },
     });
   })
+
+  $('.subscribe').validate({
+    messages: {
+      email: {
+        required: "Укажите вашу электронную почту",
+        email: "Ваша почта должна быть указана в формате name@domain.com"
+      },
+    },
+  });
 
   //Формат номера тлф
   $(document).ready(function(){

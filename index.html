@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-    rel="stylesheet" rel="preload" as="font">
+    rel="preload" as="font">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" /> 
 </head>
 <body>
-  <header class="navbar navbar__mobile_fixed">
+  <header class="navbar navbar--mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+        <a href="https://olgaprokopovich.ru/tour-plan" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="Logo: Beast Tour Plan" class="logo__image">
         </a>
 
@@ -63,25 +63,25 @@
             </form>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">All Deals</a>
+            <a href="https://www.allinclusiveoutlet.com/brands/hilton-all-inclusive" class="navbar-menu__link">All Deals</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotels</a>
+            <a href="https://www.hilton.ru/sitemap/" class="navbar-menu__link">Hotels</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Activities</a>
+            <a href="https://www.hiltonhawaiianvillage.com/resort-experiences/resort-activities" class="navbar-menu__link">Activities</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+            <a href="https://www.workspacesbyhilton.com" class="navbar-menu__link">Hotel Day Packages</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Restaurants</a>
+            <a href="https://metropole-voyage.com/tour/restorany-kategorii-mishlen/" class="navbar-menu__link">Restaurants</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Events</a>
+            <a href="https://www.hilton.com/en/events/" class="navbar-menu__link">Events</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Rodrigues</a>
+            <a href="https://ru.foursquare.com/v/rua-hilton-rodrigues/520161ca498e4f0b68c07fd4" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
         <!-- /.navbar-menu -->
@@ -196,7 +196,7 @@
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13293.055061135869!2d98.29017185284695!3d7.8899516843595725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sby!4v1637665934159!5m2!1sru!2sby"
-              width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              style="border:0; width: 100%; height: 100%"  allowfullscreen="" loading="lazy"></iframe>
           </div>
           <!-- /.map -->
         </div>
@@ -212,9 +212,14 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
+
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="email"/>
-        <button class="subscribe__button">Send</button>
+       
+        <div class="newsletter__subscribe-form">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
+          <button class="subscribe__button">Send</button>
+        </div>
+        
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
@@ -290,25 +295,25 @@
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
       </div>
@@ -320,9 +325,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" 
-        alt="Logo: Best Tour Plan" 
-        class="logo footer__logo">
+        <a href="https://olgaprokopovich.ru/tour-plan" class="logo footer__logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class=" footer-logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -383,13 +388,13 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
+            <a href="https://www.facebook.com/Doubletree/" class="footer__link">
               <img src="img/facebook.svg" alt="icon: facebook">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.youtube.com/channel/UCqBZmHn5oL1vK7LoXkpOcsA" class="footer__link">
               <img src="img/youtube.svg" alt="icon: youtube">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.instagram.com/doubletree/" class="footer__link">
               <img src="img/instagram.svg" alt="icon: instagram">
             </a>
           </div>
@@ -429,15 +434,19 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="icon: phone call">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br>
+              <div class="footer__item-tel">
+                <a href="tel: 269 1500" class="footer__item-details">Tel (business hours) : 269 1500</a>
+                <a href="tel: 52-56-61-38" class="footer__item-details">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                  pm)</a>
+                <a href="tel: 52-56-61-38" class="footer__item-details">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
+              </div>
+              
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/email.svg" alt="icon: email">
               </div>
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com" class="footer__item-mail">cherly.lawson@example.com</a> 
             </li>
           </ul>
         </div>
