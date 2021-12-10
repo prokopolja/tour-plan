@@ -210,7 +210,10 @@
       top: 78px
       padding-top: 30px
       &--visible
+        width: 100%
         display: block
+        overflow-x: auto
+        overflow-y: auto
     &-menu
       flex-direction: column
       &__item
@@ -311,6 +314,8 @@
   .modal
     &__dialog
       padding: 15px 40px 
+      overflow-y: auto
+      height: 70vh   
     &__input
       height: 40px   
       font-size: 70%  
@@ -326,7 +331,8 @@
       min-height: 20px  
       padding: 10px
       margin-bottom: 5px
-
+  .invalid
+    font-size: 13px
     
   
   
@@ -492,7 +498,9 @@
       margin-bottom: 0
     &__info
       font-size: 10px
-      line-height: 13px   
+      line-height: 13px  
+  .invalid
+    font-size: 10px           
 
 
 
