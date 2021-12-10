@@ -67,8 +67,8 @@ $(document).ready(function () {
           required: "Укажите имя",
           minlength: "Имя должно быть не короче 2 букв",
         },
-        email: {
-          required: "Укажите вашу электронную почту",
+        emailfixed: {
+          required: "Укажите электронную почту",
           email: "Ваша почта должна быть указана в формате name@domain.com",
         },
         phone: {
@@ -80,6 +80,7 @@ $(document).ready(function () {
   })
 
   $('.subscribe').validate({
+    errorClass: "error",
     messages: {
       email: {
         required: "Укажите вашу электронную почту",
@@ -87,6 +88,8 @@ $(document).ready(function () {
       },
     },
   });
+
+
 
   //Формат номера тлф
   $(document).ready(function(){
