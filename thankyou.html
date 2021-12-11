@@ -116,14 +116,19 @@
             <h1 class="hotel-name hotel-info__name">Message sent!</h1>
           </div>
           <p class="hotel-description hotel-info__description">Our manager will contact you within 10 minutes.</p>
+          <div class="button">
+            <a href="https://olgaprokopovich.ru/tour-plan" class="button-home">Go to main page</a>
+          </div>
         </div>
+        
+        
         <!-- /.hotel-info__text -->
       </div>
       <!-- /.hotel-info -->
     </div>
     <!-- /.container -->
   </section>
-  
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
@@ -298,13 +303,34 @@
       </a>
       <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
       <form action="send.php" method="POST" class="form modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"
-          maxlength="20" />
-        <input type="tel" class="input modal__input phone-number" placeholder="Phone Number*" id="phone" name="phone"
-          required minlength="16" />
-        <input type="email" class="input modal__input" placeholder="Email*" name="emailfixed" required />
-        <textarea class="message modal__message" placeholder="Message" name="message">
-          </textarea>
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*" 
+          name="name" 
+          required minlength="2"
+          maxlength="20" 
+        />
+        <input 
+          type="tel" 
+          class="input modal__input phone-number" 
+          placeholder="Phone Number*" 
+          id="phone" 
+          name="phone"
+          required minlength="16"
+        />
+        <input 
+          type="email" 
+          class="input modal__input" 
+          placeholder="Email*" 
+          name="emailfixed" 
+          required 
+        />
+        <textarea 
+          class="message modal__message" 
+          placeholder="Message" 
+          name="message">
+        </textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
@@ -312,8 +338,13 @@
   </div>
   <!-- /.modal -->
 
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  
 </body>
 
 </html>
