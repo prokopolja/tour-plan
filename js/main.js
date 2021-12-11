@@ -64,16 +64,16 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не короче 2 букв",
+          required: "Please specify your name",
+          minlength: "Name must be at least 2 letters",
         },
         emailfixed: {
-          required: "Укажите электронную почту",
-          email: "Ваша почта должна быть указана в формате name@domain.com",
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
-          minlength: "Телефон должен быть указан в таком формате +7(xxx)xxx-xx-xx",
+          required: "Enter your phone number",
+          minlength: "Your phone number must be in the format of +7(xxx)xxx-xx-xx",
         },
       },
     });
@@ -83,8 +83,8 @@ $(document).ready(function () {
     errorClass: "error",
     messages: {
       email: {
-        required: "Укажите вашу электронную почту",
-        email: "Ваша почта должна быть указана в формате name@domain.com"
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
       },
     },
   });

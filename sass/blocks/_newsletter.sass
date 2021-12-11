@@ -1,7 +1,7 @@
 .newsletter
   min-height: 260px
   position: relative
-  padding: 80px 0 87px 0
+  padding: 80px 0 66px 0
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-position: center
@@ -26,16 +26,21 @@
     margin: auto
   &-title
     color: $light
+    min-height: 75px
+    max-width: 247px
     font-style: normal
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    overflow: hidden
     &__strong
       display: block
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+      overflow: hidden
   &__subscribe
+    align-items: start
     width: 350px
     &-form
       display: flex
@@ -72,6 +77,8 @@
     color: $light
     cursor: pointer
     border-radius: 0px 4px 4px 0px
+    font-size: 12px
+    line-height: 15px
   &__button:hover
     background-color: $color-hover
     cursor: pointer  
